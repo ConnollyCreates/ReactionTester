@@ -4,6 +4,17 @@
     font-family: 'Akshar', sans-serif;
 }
 
+a:visited, a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+    
+}
+
 body {
     background-color: #2e3333;
 }
@@ -17,16 +28,46 @@ body {
    margin: 0 auto; 
    
 }
+.nav-bar{
+background: white;
+}
+.nav-bar__right {
+    float:right ;
+    list-style: none;
+
+}
+
+.nav-bar .nav-bar__right{ 
+   display: flex;
+   flex-direction: row;
+    list-style: none;
+    font-weight: bold;
+    font-size: 2em; 
+    }
+    .nav-bar .nav-bar__left{ 
+        position: relative;
+        display: inline;
+         list-style: none;
+         font-weight: bold;
+         font-size: 2em; 
+         }
+
+    .nav-bar li {
+       padding: 0 0.5em 0 0.5em;
+        border-right: 2px solid #990000;
+    }
 
 #reactionHeader {
+    position: relative;
+    top: 50px;
     text-align: center;
     background-color: #2e3333;
   
 }
 
 #reactionHeader h1, h3, p{
-    position: relative;
-    top: 75px;
+  
+  text-align: center;
     z-index: 1000;
     color: rgb(255, 255, 255);
 }
@@ -40,11 +81,18 @@ body {
 
 .time {
     position: relative;
-    top :500px;
+    top :350px;
     text-align: center;
 }
 .time p {
     position: relative;
     top :100px;
 
+}
+
+
+/* BEST SCORE SECTION*/
+#bestscore {
+    position: relative;
+    top: 150px;
 }
